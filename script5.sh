@@ -5,6 +5,8 @@ testFunction2(){ echo "Chris Test";}
 testFunction3(){ echo "Hello chris";}
 testFunction4(){ echo "Hello C";}
 testFunction5(){ echo "Riverbank Solutions";}
+testFunction6(){ echo "Lets start testing";}
+
 
 #Expose commands to handle the app
 case "$1" in
@@ -23,6 +25,9 @@ testFunction4)
 testFunction5)
       testFunction5;;
 
+
+testFunction6)
+      testFunction6;;
 *)
 
 echo "Usage: $0 {testFunction}"
