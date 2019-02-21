@@ -11,7 +11,7 @@ System.out.println("Enter the second number:");
 b = buf.nextInt();
 
 System.out.println("Enter the third number:");
-b = buf.nextInt();
+c = buf.nextInt();
 
 add = a+b+c;
 System.out.println("Sum of the integers is:"  + add);
