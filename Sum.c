@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-int a,b,add;
+int a,b,c,add;
 
 printf("Enter three numbers to be added\n");
 scanf("%d%d", &a,&b,&c);
