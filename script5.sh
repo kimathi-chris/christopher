@@ -24,7 +24,7 @@ testFunction4)
 
 
 testFunction5)
-      testFunction5;:
+      testFunction5;;
 
 testFunction6)
       testFunction6;;
