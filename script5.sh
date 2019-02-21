@@ -20,8 +20,8 @@ testFunction3)
 testFunction4)
       testFunction4;;
 	  
-testFunction4)
-      testFunction4;;
+testFunction5)
+      testFunction5;;
 testFunction6)
       testFunction6;;	  
 	  
