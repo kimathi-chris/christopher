@@ -3,10 +3,10 @@ int main()
 {
 int a,b,add;
 
-printf("Enter two numbers to be added\n");
-scanf("%d%d", &a,&b);
+printf("Enter three numbers to be added\n");
+scanf("%d%d", &a,&b,&c);
 
-add = a+b;
+add = a+b+c;
 
 printf("Sum of the numbers =%d\n", add);
 
