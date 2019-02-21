@@ -13,8 +13,8 @@ b = buf.nextInt();
 System.out.println("Enter the third number:");
 c = buf.nextInt();
 
-System.out.println("Enter the third number:");
-c = buf.nextInt();
+System.out.println("Enter the fourth number:");
+d = buf.nextInt();
 
 add = a+b+c+d;
 System.out.println("Sum of the integers is:"  + add);
