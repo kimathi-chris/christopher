@@ -6,7 +6,7 @@ testFunction3(){ echo "Hello chris";}
 testFunction4(){ echo "Hello C";}
 testFunction5(){ echo "Hello kim";}
 testFunction6(){ echo "Riverbank Solutions LTD";}
-testFunction7(){ echo "Kenya is my home";}
+testFunction7(){ echo "Kenya is my home1";}
 
 #Expose commands to handle the app
 case "$1" in
