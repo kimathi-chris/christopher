@@ -6,7 +6,10 @@ read num1
 echo -n "Enter the second number: "
 read num2
 
-sum=`expr $num1 + $num2`
+echo -n "Enter the third number: "
+read num3
+
+sum=`expr $num1 + $num2 + $num3`
 echo "sum is "$sum
 #echo $sum
 
