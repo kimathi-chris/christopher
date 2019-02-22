@@ -17,6 +17,6 @@ System.out.println("Enter the fourth number:");
 d = buf.nextInt();
 
 product = a*b*c*d;
-System.out.println("Product of the integers is:"  * product);
+System.out.println("Product of the integers is:"  + product);
 }
 }
