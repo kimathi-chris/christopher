@@ -17,7 +17,11 @@ git clone -b master https://github.com/kimathi-chris/christopher.git
 
 build(){
 javac Sum.java
-git clone -b master https://github.com/kimathi-chris/christopher.git
+
+}
+
+start(){
+java Sum
 
 }
 
@@ -45,14 +49,17 @@ testFunction6)
 testFunction7)
       testFunction7;;
 
+testFunction8)
+      testFunction8;;
+
 update)
    update;;
 
 build)
    build;;
 
-testFunction8)
-      testFunction8;;
+start)
+   start;;
 	  
 *)
 
