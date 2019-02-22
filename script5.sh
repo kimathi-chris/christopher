@@ -7,6 +7,25 @@ testFunction4(){ echo "Hello C";}
 testFunction5(){ echo "Hello kim";}
 testFunction6(){ echo "Riverbank Solutions LTD";}
 testFunction7(){ echo "Kenya is my home1";}
+update(){
+rm -rf christopher
+mkdir christopher
+git clone -b master https://github.com/kimathi-chris/christopher.git
+}
+
+
+build(){
+echo -e''
+mvn -f christopher
+cp -v christopher/target/
+rm rf christopher/target/
+return 0;
+}
+
+isRunning() {
+ps -p "$1" &> /git clone -b master https://github.com/kimathi-chris/christopher.git/null
+}
+
 
 #Expose commands to handle the app
 case "$1" in
@@ -32,7 +51,11 @@ testFunction6)
 testFunction7)
       testFunction7;;
 
+update)
+   update;;
 
+build)
+   build;;
 	  
 *)
 
