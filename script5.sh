@@ -16,17 +16,10 @@ git clone -b master https://github.com/kimathi-chris/christopher.git
 
 
 build(){
-echo -e''
-mvn -f christopher
-cp -v christopher/target/
-rm rf christopher/target/
-return 0;
-}
+javac Sum.java
+git clone -b master https://github.com/kimathi-chris/christopher.git
 
-isRunning() {
-ps -p "$1" &> /git clone -b master https://github.com/kimathi-chris/christopher.git/null
 }
-
 
 #Expose commands to handle the app
 case "$1" in
