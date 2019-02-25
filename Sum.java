@@ -21,7 +21,7 @@ e = buf.nextInt();
 
 
 
-product = a+b+c+d+e;
+add = a+b+c+d+e;
 System.out.println("Sum of the integers is:"  + add);
 }
 }
