@@ -16,10 +16,10 @@ c = buf.nextInt();
 System.out.println("Enter the fourth number:");
 d = buf.nextInt();
 
-System.out.println("Enter the fourth number:");
+System.out.println("Enter the fifth number:");
 e = buf.nextInt();
 
 product = a*b*c*d*e;
-System.out.println("Sum of the integers is:"  + product);
+System.out.println("Product of the integers is:"  + product);
 }
 }
