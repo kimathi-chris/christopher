@@ -8,10 +8,12 @@ testFunction5(){ echo "Hello kim";}
 testFunction6(){ echo "Riverbank Solutions LTD";}
 testFunction7(){ echo "Kenya is my home1";}
 testFunction8(){ echo "Kenya is my home2";}
+
 update(){
 rm -rf christopher
 mkdir christopher
 git clone -b master https://github.com/kimathi-chris/christopher.git
+
 }
 
 
