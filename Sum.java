@@ -1,7 +1,7 @@
 import java.util.*;
 class Sum{
 public static void main(String[] args){
-int a,b,c,product;
+int a,b,c,add;
 
 Scanner buf = new Scanner(System.in);
 System.out.println("Enter the first number:");
@@ -15,7 +15,7 @@ c = buf.nextInt();
 
 
 
-product = a*b*c;
-System.out.println("Product of the integers is:"  + product);
+add = a+b+c;
+System.out.println("Sum of the integers is:"  + add);
 }
 }
