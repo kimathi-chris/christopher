@@ -21,7 +21,7 @@ e = buf.nextInt();
 
 
 
-product = a+b+c+d+e;
+product = (a*b*c*d*e)/2;
 System.out.println("Product of the integers is:"  + product);
 }
 }
