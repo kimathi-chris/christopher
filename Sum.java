@@ -19,7 +19,7 @@ d = buf.nextInt();
 System.out.println("Enter the fourth number:");
 e = buf.nextInt();
 
-add = a*b*c*d*e;
+product = a*b*c*d*e;
 System.out.println("Sum of the integers is:"  + product);
 }
 }
