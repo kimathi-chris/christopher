@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Loan-Application - UFANISI</title>
+        <!--/*/ <th:block th:include="fragments/head :: head"></th:block> /*/-->
+    </head>
+    <body>
+        <!--/*/ <th:block th:include="fragments/header :: body"></th:block> /*/-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <div class="panel panel-default">
+                        <!-- Default panel contents -->
+                        <div class="panel-heading">Loan Application <a th:href="@{/loanapplications/add}" class="btn btn-primary"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a></div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Last Name</th>
+                                    <th>First Name</th>
+                                    <th>Amount Applied</th>
+                                    <th>Amount Approved</th>
+                                    <th>Loan for</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <div th:if="!${#lists.isEmpty(loanapplications)}">
+                                <tr th:each = "loanapplication : ${loanapplications}">
+                                    <td th:text = "${loanapplication.id}"></td>
+                                    <td th:text = "${loanapplication.lastName}"></td>
+                                    <td th:text = "${loanapplication.firstName}"></td>
+                                    <td th:text = "${loanapplication.AmountApplied}"></td>
+                                    <td th:text = "${loanapplication.AmountApproved}"></td>
+                                    <td th:text = "${loanapplication.Loan_for}"></td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="...">
+                                            <a th:href="${'/loanapplications/view/' + loanapplication.id}" class="btn btn-info"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                                            <a th:href="${'/loanapplications/edit/' + loanapplication.id}" class="btn btn-success"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                                            <a th:href="${'/loanapplications/delete/' + loanapplication.id}" class="btn btn-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </div>
+                            <div th:if="${#lists.isEmpty(loanapplications)}">
+                                <tr>
+                                    <td>No loan application exists!</td>
+                                </tr>
+                            </div>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/*/ <th:block th:include="fragments/js :: body"></th:block> /*/-->
+        <script src="../static/js/app.js" th:src="@{/js/app.js}"></script>
+    </body>
+</html>
